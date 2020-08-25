@@ -6,40 +6,40 @@
         <div class="fs-spacing-editor__center">
           <select name="bt" v-model="model.bt">
             <option
-              v-for="key in Object.keys(options)"
-              :key="model._uid + '_bt_' + key"
-              :value="key"
-            >{{ options[key] }}</option>
+              v-for="[key, value] in Object.entries(options)"
+              :key="model._uid + '_bt_' + value"
+              :value="value"
+            >{{ key }}</option>
           </select>
         </div>
         <div class="fs-spacing-editor__flex">
           <div>
             <select name="bl" v-model="model.bl">
               <option
-                v-for="key in Object.keys(options)"
-                :key="model._uid + '_bl_' + key"
-                :value="key"
-              >{{ options[key] }}</option>
+                v-for="[key, value] in Object.entries(options)"
+                :key="model._uid + '_bl_' + value"
+                :value="value"
+              >{{ key }}</option>
             </select>
           </div>
           <div class="fs-spacing-editor__center" style="padding: 1em;">Content</div>
           <div>
             <select name="br" v-model="model.br">
               <option
-                v-for="key in Object.keys(options)"
-                :key="model._uid + '_br_' + key"
-                :value="key"
-              >{{ options[key] }}</option>
+                v-for="[key, value] in Object.entries(options)"
+                :key="model._uid + '_br_' + value"
+                :value="value"
+              >{{ key }}</option>
             </select>
           </div>
         </div>
         <div class="fs-spacing-editor__center">
           <select name="bb" v-model="model.bb">
             <option
-              v-for="key in Object.keys(options)"
-              :key="model._uid + '_bb_' + key"
-              :value="key"
-            >{{ options[key] }}</option>
+              v-for="[key, value] in Object.entries(options)"
+              :key="model._uid + '_bb_' + value"
+              :value="value"
+            >{{ key }}</option>
           </select>
         </div>
       </div>
